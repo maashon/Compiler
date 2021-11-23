@@ -1,0 +1,1063 @@
+<!DOCTYPE html> 
+<html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns#">
+
+<head>
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script>
+  	(adsbygoogle = window.adsbygoogle || []).push({
+    		google_ad_client: "ca-pub-7477930862359747",
+    		enable_page_level_ads: true
+  	});
+	</script>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	
+
+	<link rel="pingback" href="https://www.slothparadise.com/xmlrpc.php">
+
+	<script>document.documentElement.className = document.documentElement.className.replace("no-js","js");</script>
+
+<!-- This site is optimized with the Yoast SEO plugin v5.8 - https://yoast.com/wordpress/plugins/seo/ -->
+<title>8 Steps to Install Cygwin on Windows - slothparadise</title>
+<meta name="description" content="Cygwin provides the Linux feeling on Windows. With Cygwin, you can get a sizable Linux collection of GNU and Open Source tools including a terminal that supports POSIX interface on Windows."/>
+<link rel="canonical" href="https://www.slothparadise.com/how-to-install-cygwin-on-windows/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="8 Steps to Install Cygwin on Windows - slothparadise" />
+<meta property="og:description" content="Cygwin provides the Linux feeling on Windows. With Cygwin, you can get a sizable Linux collection of GNU and Open Source tools including a terminal that supports POSIX interface on Windows." />
+<meta property="og:url" content="https://www.slothparadise.com/how-to-install-cygwin-on-windows/" />
+<meta property="og:site_name" content="slothparadise" />
+<meta property="article:publisher" content="https://www.facebook.com/slothparadisecom" />
+<meta property="article:tag" content="Cygwin" />
+<meta property="article:tag" content="Installation" />
+<meta property="article:tag" content="Terminal" />
+<meta property="article:tag" content="Windows" />
+<meta property="article:section" content="Documentation" />
+<meta property="article:published_time" content="2014-11-11T07:40:00-05:00" />
+<meta property="article:modified_time" content="2015-07-29T06:56:19-05:00" />
+<meta property="og:updated_time" content="2015-07-29T06:56:19-05:00" />
+<meta property="og:image" content="https://www.slothparadise.com/wp-content/uploads/2014/11/cygwin1.png" />
+<meta property="og:image:secure_url" content="https://www.slothparadise.com/wp-content/uploads/2014/11/cygwin1.png" />
+<meta property="og:image:width" content="1366" />
+<meta property="og:image:height" content="624" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="Cygwin provides the Linux feeling on Windows. With Cygwin, you can get a sizable Linux collection of GNU and Open Source tools including a terminal that supports POSIX interface on Windows." />
+<meta name="twitter:title" content="8 Steps to Install Cygwin on Windows - slothparadise" />
+<meta name="twitter:site" content="@microwavesam" />
+<meta name="twitter:image" content="https://www.slothparadise.com/wp-content/uploads/2014/11/cygwin1.png" />
+<meta name="twitter:creator" content="@microwavesam" />
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","@id":"#website","url":"https:\/\/www.slothparadise.com\/","name":"slothparadise","alternateName":"Sloth Paradise","potentialAction":{"@type":"SearchAction","target":"https:\/\/www.slothparadise.com\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"Organization","url":"https:\/\/www.slothparadise.com\/how-to-install-cygwin-on-windows\/","sameAs":["https:\/\/www.facebook.com\/slothparadisecom","https:\/\/instagram.com\/huyle333","https:\/\/www.linkedin.com\/in\/huyle333","https:\/\/www.youtube.com\/microwavesam","https:\/\/twitter.com\/microwavesam"],"@id":"#organization","name":"slothparadise","logo":"https:\/\/www.slothparadise.com\/wp-content\/uploads\/2014\/07\/slothlogo.png"}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="slothparadise &raquo; Feed" href="http://feeds.feedburner.com/slothparadise" />
+<link rel="alternate" type="application/rss+xml" title="slothparadise &raquo; Comments Feed" href="https://www.slothparadise.com/comments/feed/" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,600&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link rel="alternate" type="application/rss+xml" title="slothparadise &raquo; 8 Steps to Install Cygwin on Windows Comments Feed" href="https://www.slothparadise.com/how-to-install-cygwin-on-windows/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.slothparadise.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.1"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56794,8205,9794,65039],[55358,56794,8203,9794,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='crayon-css'  href='https://www.slothparadise.com/wp-content/plugins/crayon-syntax-highlighter/css/min/crayon.min.css?ver=_2.7.2_beta' type='text/css' media='all' />
+<link rel='stylesheet' id='crayon-theme-sublime-text-css'  href='https://www.slothparadise.com/wp-content/plugins/crayon-syntax-highlighter/themes/sublime-text/sublime-text.css?ver=_2.7.2_beta' type='text/css' media='all' />
+<link rel='stylesheet' id='crayon-font-consolas-css'  href='https://www.slothparadise.com/wp-content/plugins/crayon-syntax-highlighter/fonts/consolas.css?ver=_2.7.2_beta' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='https://www.slothparadise.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.9' type='text/css' media='all' />
+<link rel='stylesheet' id='fancybox-style-css'  href='https://www.slothparadise.com/wp-content/plugins/light/css/jquery.fancybox.css?ver=4.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='style-css'  href='https://www.slothparadise.com/wp-content/themes/anew/style.css?ver=4.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='responsive-css'  href='https://www.slothparadise.com/wp-content/themes/anew/responsive.css?ver=4.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='custom-css'  href='https://www.slothparadise.com/wp-content/themes/anew/custom.css?ver=4.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='https://www.slothparadise.com/wp-content/themes/anew/fonts/font-awesome.min.css?ver=4.9.1' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.slothparadise.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://www.slothparadise.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var CrayonSyntaxSettings = {"version":"_2.7.2_beta","is_admin":"0","ajaxurl":"https:\/\/www.slothparadise.com\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
+var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Click To Expand Code"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.slothparadise.com/wp-content/plugins/crayon-syntax-highlighter/js/min/crayon.min.js?ver=_2.7.2_beta'></script>
+<script type='text/javascript' src='https://www.slothparadise.com/wp-content/themes/anew/js/jquery.flexslider.min.js?ver=4.9.1'></script>
+<link rel='https://api.w.org/' href='https://www.slothparadise.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.slothparadise.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.slothparadise.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.9.1" />
+<link rel='shortlink' href='https://www.slothparadise.com/?p=63' />
+<link rel="alternate" type="application/json+oembed" href="https://www.slothparadise.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.slothparadise.com%2Fhow-to-install-cygwin-on-windows%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.slothparadise.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.slothparadise.com%2Fhow-to-install-cygwin-on-windows%2F&#038;format=xml" />
+<link rel="shortcut icon" href="https://www.slothparadise.com/wp-content/uploads/2014/07/favicon.png" />
+<!--[if lt IE 9]>
+<script src="https://www.slothparadise.com/wp-content/themes/anew/js/ie/html5.js"></script>
+<script src="https://www.slothparadise.com/wp-content/themes/anew/js/ie/selectivizr.js"></script>
+<![endif]-->
+<style type="text/css">
+/* Dynamic CSS: For no styles in head, copy and put the css below in your custom.css or child theme's style.css, disable dynamic styles */
+body { font-family: "Open Sans", Arial, sans-serif; }
+.boxed #wrapper, .container { max-width: 1080px; }
+
+::selection { background-color: #1e73be; }
+::-moz-selection { background-color: #1e73be; }
+
+a,
+.themeform label .required,
+.post-title a:hover,
+.post-meta a:hover,
+.author-bio .bio-name a:hover,
+.post-nav li a:hover span,
+.post-nav li a:hover i,
+.widget_rss ul li a,
+.widget_calendar a,
+.alx-tab .tab-item-category a,
+.alx-posts .post-item-category a,
+.alx-tab li:hover .tab-item-title a,
+.alx-tab li:hover .tab-item-comment a,
+.alx-posts li:hover .post-item-title a,
+#footer .widget_rss ul li a,
+#footer .widget_calendar a,
+#footer .alx-tab .tab-item-category a,
+#footer .alx-posts .post-item-category a,
+.comment-tabs li.active a,
+.comment-awaiting-moderation,
+.child-menu a:hover,
+.child-menu .current_page_item > a,
+.wp-pagenavi a { color: #1e73be; }
+
+.themeform input[type="submit"],
+.themeform button[type="submit"],
+.s1 .sidebar-toggle,
+.more-link,
+.post-tags a:hover,
+.author-bio .bio-avatar:after,
+.widget_calendar caption,
+.commentlist li.bypostauthor > .comment-body:after,
+.commentlist li.comment-author-admin > .comment-body:after { background-color: #1e73be; }
+
+.alx-tabs-nav li.active a,
+.wp-pagenavi a:hover,
+.wp-pagenavi a:active,
+.wp-pagenavi span.current { border-bottom-color: #1e73be!important; }
+
+.themeform input[type="text"]:focus, 
+.themeform input[type="password"]:focus, 
+.themeform input[type="email"]:focus, 
+.themeform textarea:focus,
+.comment-tabs li.active a { border-color: #1e73be; }		
+				
+#header, .boxed #header { background-color: #1e73be; }
+</style>
+</head>
+
+<body class="post-template-default single single-post postid-63 single-format-standard col-2cl full-width topbar-enabled light-header-text chrome">
+
+<div id="wrapper">
+
+	<header id="header">
+	
+					<nav class="nav-container group" id="nav-topbar">
+				<div class="nav-toggle"><i class="fa fa-bars"></i></div>
+				<div class="nav-text"><!-- put your mobile menu text here --></div>
+				<div class="nav-wrap container"><ul id="menu-navigation-bar" class="nav container-inner group"><li id="menu-item-618" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-618"><a title="Home" href="http://www.slothparadise.com/">Home</a></li>
+<li id="menu-item-2058" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-2058"><a href="https://www.slothparadise.com/blog/">Blog</a></li>
+<li id="menu-item-2123" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2123"><a href="https://www.slothparadise.com/about/">About</a></li>
+</ul></div>
+				
+				<div class="container">	
+					<div class="toggle-search"><i class="fa fa-search"></i></div>
+					<div class="search-expand">
+						<div class="search-expand-inner">
+							<form method="get" class="searchform themeform" action="https://www.slothparadise.com/">
+	<div>
+		<input type="text" class="search" name="s" onblur="if(this.value=='')this.value='To search type and hit enter';" onfocus="if(this.value=='To search type and hit enter')this.value='';" value="To search type and hit enter" />
+	</div>
+</form>						</div>
+					</div>
+				</div><!--/.container-->
+				
+			</nav><!--/#nav-topbar-->
+				
+		<div class="container">
+						<div class="pad group">
+				<p class="site-title"><a href="https://www.slothparadise.com/" rel="home"><img src="https://www.slothparadise.com/wp-content/uploads/2014/07/sloth-header.png" alt="slothparadise"></a></p>
+				<p class="site-description">feeling philoslothical</p>				<ul class="social-links"><li><a rel="nofollow" class="social-tooltip" title="Patreon" href="https://www.patreon.com/microwavesam" target="Array"><i class="fa fa-heart" style="color: #ffffff;"></i></a></li></ul>			</div>
+								</div><!--/.container-->
+		
+	</header><!--/#header-->
+	
+	<div id="page" class="container">
+		<div class="main group">
+<section class="content">
+	
+	<div class="pad group">			
+	
+		
+		<article class="post-63 post type-post status-publish format-standard has-post-thumbnail hentry category-documentation category-terminal category-windows tag-cygwin tag-installation tag-terminal tag-windows">
+		
+			<h1 class="post-title pad">8 Steps to Install Cygwin on Windows</a></h1>
+			
+			<ul class="post-meta pad group">
+				<li><a href="https://www.slothparadise.com/category/documentation/" rel="category tag">Documentation</a> / <a href="https://www.slothparadise.com/category/terminal/" rel="category tag">Terminal</a> / <a href="https://www.slothparadise.com/category/windows/" rel="category tag">Windows</a></li>
+				<li><i class="fa fa-clock-o"></i>11 Nov, 2014</li>
+				<li><a href="https://www.slothparadise.com/how-to-install-cygwin-on-windows/#comments"><i class="fa fa-comment"></i><span class="dsq-postid" data-dsqidentifier="63 http://tangodown.org/?p=63">56</span></a></li>			</ul>
+			
+			<div class="post-inner">
+				
+								
+				<div class="post-deco">
+					<div class="hex hex-small">
+						<div class="hex-inner"><i class="fa"></i></div>
+												<div class="corner-1"></div>
+						<div class="corner-2"></div>
+					</div>
+				</div><!--/.post-deco-->
+				
+				<div class="post-content pad">
+				
+					<div class="entry">
+						<p>Cygwin provides the Linux feeling on Windows. With Cygwin, you can get a sizable Linux collection of GNU and Open Source tools including a terminal that supports POSIX interface on Windows.</p>
+<h4><strong>Step 1)</strong></h4>
+<p>Check whether your System type is 32 bit or 64 bit. If you have Windows 8 or 8.1, right click on This PC on your Desktop, then click on Properties. If you don&#8217;t have This PC on your Desktop, you can also use Windows&#8217; search to look for &#8220;<code>This PC</code>&#8220;, then right click the icon, and click on Properties.</p>
+<p>On the Properties of This PC, you can see the System Type underneath System category. For me, System type: <code>64-bit Operating System, x64-based processor</code>. I have a 64 bit operating system.</p>
+<div id="attachment_64" style="max-width: 563px" class="wp-caption aligncenter"><a href="http://slothparadise.com/wp-content/uploads/2014/11/ThisPC.png"><img class="wp-image-64 " src="http://slothparadise.com/wp-content/uploads/2014/11/ThisPC.png" alt="" width="553" height="358" srcset="https://www.slothparadise.com/wp-content/uploads/2014/11/ThisPC.png 932w, https://www.slothparadise.com/wp-content/uploads/2014/11/ThisPC-300x194.png 300w" sizes="(max-width: 553px) 100vw, 553px" /></a><p class="wp-caption-text">Right Click on This PC, Click on Properties, and Look at your System type.</p></div>
+<p>&nbsp;</p>
+<h4><strong>Step 2)</strong></h4>
+<p>Go to<a href="http://cygwin.com/install.html" target="_blank"> https://cygwin.com/install.html</a></p>
+<p><span style="line-height: 1.5;">Select the blue linked executable setup based on your system type of Step 1. Download will start automatically after clicking on one of the blue executable setup links.</span></p>
+<div id="attachment_65" style="max-width: 746px" class="wp-caption aligncenter"><a href="http://slothparadise.com/wp-content/uploads/2014/11/DownloadCygwin.png"><img class="wp-image-65 " src="http://slothparadise.com/wp-content/uploads/2014/11/DownloadCygwin.png" alt="" width="736" height="228" srcset="https://www.slothparadise.com/wp-content/uploads/2014/11/DownloadCygwin.png 975w, https://www.slothparadise.com/wp-content/uploads/2014/11/DownloadCygwin-300x93.png 300w" sizes="(max-width: 736px) 100vw, 736px" /></a><p class="wp-caption-text">Click on the executable setup based on your System type. Download starts automatically.</p></div>
+<p>&nbsp;</p>
+<h4><strong>Step 3)</strong></h4>
+<p>Open the executable Cygwin setup file. Run the set-up as normal. Click on Next on the Cygwin Setup screen.</p>
+<p>When choosing Installation Type, select <code>Install from Internet</code> (default). Click Next.</p>
+<p>When choosing the Installation Directory, you can leave the root directory by default, which will be <code>C:\cygwin64 (64 bit)</code>. Install for all users. Click Next.</p>
+<p>The Local Package Directory contains the setup installation files for packages that you wish Cygwin to have. Underneath Select Local Package Directory, the default is the directory where you have the setup executable.</p>
+<p>You can leave this by default.</p>
+<p>For Setup your Internet Connection, use <code>Direct Connection for your Internet Connection</code> if you&#8217;re using wi-fi or ethernet. Click next.</p>
+<p>Choose a Download Site. Select any of the download sites. Click Next.</p>
+<div id="attachment_66" style="max-width: 557px" class="wp-caption aligncenter"><a href="http://slothparadise.com/wp-content/uploads/2014/11/cygwinsetup.png"><img class="wp-image-66 size-full" src="http://slothparadise.com/wp-content/uploads/2014/11/cygwinsetup.png" alt="" width="547" height="397" srcset="https://www.slothparadise.com/wp-content/uploads/2014/11/cygwinsetup.png 547w, https://www.slothparadise.com/wp-content/uploads/2014/11/cygwinsetup-300x218.png 300w" sizes="(max-width: 547px) 100vw, 547px" /></a><p class="wp-caption-text">Cygwin Setup</p></div>
+<p>&nbsp;</p>
+<h4><strong>Step 4)</strong></h4>
+<p>You&#8217;ll now be at Cygwin Setup &#8211; Select Packages. From here, you can search for packages that you wish Cygwin to have. The ones that I recommend are:</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-5a49e0d21a29c283870607" class="crayon-syntax crayon-theme-sublime-text crayon-font-consolas crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 14px !important; line-height: 16px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" show" style="font-size: 14px !important;height: 21px !important; line-height: 21px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 14px !important;height: 21px !important; line-height: 21px !important;"><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div>
+			<div class="crayon-info" style="min-height: 19.6px !important; line-height: 19.6px !important;"></div>
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="click" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 14px !important; line-height: 16px !important;">
+gcc-core (C files) - inside Devel category
+make (makefiles) - inside Devel category
+openssh (to use ssh) - inside Net category
+nano (text editor) - inside Editors category</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="hide">
+					<div class="crayon-nums-content" style="font-size: 14px !important; line-height: 16px !important;"><div class="crayon-num" data-line="crayon-5a49e0d21a29c283870607-1">1</div><div class="crayon-num" data-line="crayon-5a49e0d21a29c283870607-2">2</div><div class="crayon-num" data-line="crayon-5a49e0d21a29c283870607-3">3</div><div class="crayon-num" data-line="crayon-5a49e0d21a29c283870607-4">4</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 14px !important; line-height: 16px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-5a49e0d21a29c283870607-1"><span class="crayon-v">gcc</span><span class="crayon-o">-</span><span class="crayon-e">core</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-i">C</span><span class="crayon-h"> </span><span class="crayon-v">files</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-h"> </span><span class="crayon-e">inside </span><span class="crayon-e">Devel </span><span class="crayon-e">category</span></div><div class="crayon-line" id="crayon-5a49e0d21a29c283870607-2"><span class="crayon-e">make</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-v">makefiles</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-h"> </span><span class="crayon-e">inside </span><span class="crayon-e">Devel </span><span class="crayon-e">category</span></div><div class="crayon-line" id="crayon-5a49e0d21a29c283870607-3"><span class="crayon-e">openssh</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-st">to</span><span class="crayon-h"> </span><span class="crayon-st">use</span><span class="crayon-h"> </span><span class="crayon-v">ssh</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-h"> </span><span class="crayon-e">inside </span><span class="crayon-e">Net </span><span class="crayon-e">category</span></div><div class="crayon-line" id="crayon-5a49e0d21a29c283870607-4"><span class="crayon-e">nano</span><span class="crayon-h"> </span><span class="crayon-sy">(</span><span class="crayon-e">text </span><span class="crayon-v">editor</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-o">-</span><span class="crayon-h"> </span><span class="crayon-e">inside </span><span class="crayon-e">Editors </span><span class="crayon-v">category</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0009 seconds] -->
+<p>For each of these packages, they belong to categories. Search for a package. Click on the <code>+</code> next to a category to expand the contents of the search. Click on the <code>circle twirl with the arrows</code> to select the most up-to-date version of that package. Package names are on the right with a short description of that package.</p>
+<div id="attachment_67" style="max-width: 747px" class="wp-caption aligncenter"><a href="http://slothparadise.com/wp-content/uploads/2014/11/selectcygwinpackages.png"><img class="wp-image-67 " src="http://slothparadise.com/wp-content/uploads/2014/11/selectcygwinpackages.png" alt="" width="737" height="393" srcset="https://www.slothparadise.com/wp-content/uploads/2014/11/selectcygwinpackages.png 1366w, https://www.slothparadise.com/wp-content/uploads/2014/11/selectcygwinpackages-300x160.png 300w, https://www.slothparadise.com/wp-content/uploads/2014/11/selectcygwinpackages-1024x546.png 1024w" sizes="(max-width: 737px) 100vw, 737px" /></a><p class="wp-caption-text">Example of selecting the latest version of nano to install.</p></div>
+<p>&nbsp;</p>
+<h4><strong>Step 5)</strong></h4>
+<p>After selecting a version to install for all your packages, you can click the next button at the bottom right of the setup screen. At the Resolving Dependencies screen, make sure that the checkbox that says <code>Select required packages (RECOMMENDED)</code> is checked. Click Next. The download and installation of your desired packages will commence.</p>
+<div id="attachment_68" style="max-width: 487px" class="wp-caption aligncenter"><a href="http://slothparadise.com/wp-content/uploads/2014/11/resolvingdependencies.png"><img class="wp-image-68 " src="http://slothparadise.com/wp-content/uploads/2014/11/resolvingdependencies.png" alt="" width="477" height="349" srcset="https://www.slothparadise.com/wp-content/uploads/2014/11/resolvingdependencies.png 543w, https://www.slothparadise.com/wp-content/uploads/2014/11/resolvingdependencies-300x219.png 300w" sizes="(max-width: 477px) 100vw, 477px" /></a><p class="wp-caption-text">Resolving Dependencies.</p></div>
+<p>&nbsp;</p>
+<h4><strong>Step 6)</strong></h4>
+<p>After you finish the download and installation, you can check Create an icon on Desktop. Click Finish. You&#8217;ll find a program called Cygwin64 Terminal on your desktop. Open the program. Cygwin is installed.</p>
+<div id="attachment_69" style="max-width: 506px" class="wp-caption aligncenter"><a href="http://slothparadise.com/wp-content/uploads/2014/11/installationstatus.png"><img class="wp-image-69 " src="http://slothparadise.com/wp-content/uploads/2014/11/installationstatus.png" alt="" width="496" height="363" srcset="https://www.slothparadise.com/wp-content/uploads/2014/11/installationstatus.png 543w, https://www.slothparadise.com/wp-content/uploads/2014/11/installationstatus-300x219.png 300w" sizes="(max-width: 496px) 100vw, 496px" /></a><p class="wp-caption-text">Installation of packages has finished. Finish.</p></div>
+<div id="attachment_70" style="max-width: 505px" class="wp-caption aligncenter"><a href="http://slothparadise.com/wp-content/uploads/2014/11/cygwinisinstalled.png"><img class="wp-image-70 " src="http://slothparadise.com/wp-content/uploads/2014/11/cygwinisinstalled.png" alt="" width="495" height="273" srcset="https://www.slothparadise.com/wp-content/uploads/2014/11/cygwinisinstalled.png 593w, https://www.slothparadise.com/wp-content/uploads/2014/11/cygwinisinstalled-300x165.png 300w" sizes="(max-width: 495px) 100vw, 495px" /></a><p class="wp-caption-text">When you open Cygwin for the first time, Cygwin initializes.</p></div>
+<p>&nbsp;</p>
+<h4><strong>Step 7)</strong></h4>
+<p>You can also add the Cygwin packages and POSIX interface for the Windows command prompt. In other words, you can make the command prompt act like the terminal in Linux.</p>
+<p>Right click on &#8220;<code>This PC</code>&#8221; and click Properties if it&#8217;s on the Desktop. Also, you can use Windows&#8217; search for &#8220;<code>This PC</code>&#8221; and right click, then click on Properties.</p>
+<p>Click on Advanced System Settings in this Properties window.</p>
+<p>In the System Properties that pops up, click on <code>Environment Variables</code>, which will be within the Advanced tab. Inside <code>Environment Variables</code>, look underneath the <code>System variables</code> section. Scroll through and look for the Variable with the name <code>Path</code>. Click on that line. Click on the Edit button underneath. For 64 bit, add a &#8220;<code>;C:\cygwin64\bin;</code>&#8221; to the end of the Variable value line. This allows the command prompt to work with Cygwin&#8217;s directory path to the Cygwin&#8217;s bin folder and utilize Cygwin&#8217;s packages and POSIX interface. Click OK for each of the three windows to save this setting.</p>
+<div id="attachment_71" style="max-width: 624px" class="wp-caption aligncenter"><a href="http://slothparadise.com/wp-content/uploads/2014/11/cygwinpathvariable.png"><img class="wp-image-71 " src="http://slothparadise.com/wp-content/uploads/2014/11/cygwinpathvariable.png" alt="" width="614" height="456" srcset="https://www.slothparadise.com/wp-content/uploads/2014/11/cygwinpathvariable.png 935w, https://www.slothparadise.com/wp-content/uploads/2014/11/cygwinpathvariable-300x223.png 300w" sizes="(max-width: 614px) 100vw, 614px" /></a><p class="wp-caption-text">Cygwin&#8217;s path variable to work with the command prompt.</p></div>
+<p>&nbsp;</p>
+<h4><strong>Step 8)</strong></h4>
+<p>Open a command prompt. You can use Windows&#8217; search and search for command prompt or cmd. Click on command prompt, and a command prompt black box will open. You will have all the functionality of Cygwin within the command prompt. You can choose to use either Cygwin or a command prompt to use the linux tools or POSIX interface.</p>
+<div id="attachment_72" style="max-width: 683px" class="wp-caption aligncenter"><a href="http://slothparadise.com/wp-content/uploads/2014/11/commandpromptexample.png"><img class="wp-image-72 size-full" src="http://slothparadise.com/wp-content/uploads/2014/11/commandpromptexample.png" alt="" width="673" height="338" srcset="https://www.slothparadise.com/wp-content/uploads/2014/11/commandpromptexample.png 673w, https://www.slothparadise.com/wp-content/uploads/2014/11/commandpromptexample-300x151.png 300w" sizes="(max-width: 673px) 100vw, 673px" /></a><p class="wp-caption-text">Displaying SSH on a Windows command prompt.</p></div>
+
+<!-- WP QUADS Content Ad Plugin v. 1.6.0 -->
+<div class="quads-location quads-ad1" id="quads-ad1" style="float:none;margin:60px 0 60px 0;text-align:center;">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- SlothparadiseResponsiveAd01 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7477930862359747"
+     data-ad-slot="3531636205"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+											</div><!--/.entry-->
+					
+					<p class="post-tags"><span>Tags:</span> <a href="https://www.slothparadise.com/tag/cygwin/" rel="tag">Cygwin</a><a href="https://www.slothparadise.com/tag/installation/" rel="tag">Installation</a><a href="https://www.slothparadise.com/tag/terminal/" rel="tag">Terminal</a><a href="https://www.slothparadise.com/tag/windows/" rel="tag">Windows</a></p>					
+				</div><!--/.post-content-->
+				<div class="post-sharrre group">
+	<div id="twitter" data-url="https://www.slothparadise.com/how-to-install-cygwin-on-windows/" data-text="8 Steps to Install Cygwin on Windows" data-title="Tweet"></div>
+	<div id="facebook" data-url="https://www.slothparadise.com/how-to-install-cygwin-on-windows/" data-text="8 Steps to Install Cygwin on Windows" data-title="Like"></div>
+	<div id="googleplus" data-url="https://www.slothparadise.com/how-to-install-cygwin-on-windows/" data-text="8 Steps to Install Cygwin on Windows" data-title="+1"></div>
+	<div id="pinterest" data-url="https://www.slothparadise.com/how-to-install-cygwin-on-windows/" data-text="8 Steps to Install Cygwin on Windows" data-title="Pin It"></div>
+</div><!--/.post-sharrre-->
+
+<script type="text/javascript">
+	// Sharrre
+	jQuery(document).ready(function(){
+		jQuery('#twitter').sharrre({
+			share: {
+				twitter: true
+			},
+			template: '<a class="box group" href="#"><div class="count" href="#"><i class="fa fa-plus"></i></div><div class="share"><i class="fa fa-twitter"></i></div></a>',
+			enableHover: false,
+			enableTracking: true,
+			buttons: { twitter: {via: 'microwavesam'}},
+			click: function(api, options){
+				api.simulateClick();
+				api.openPopup('twitter');
+			}
+		});
+		jQuery('#facebook').sharrre({
+			share: {
+				facebook: true
+			},
+			template: '<a class="box group" href="#"><div class="count" href="#">{total}</div><div class="share"><i class="fa fa-facebook-square"></i></div></a>',
+			enableHover: false,
+			enableTracking: true,
+			click: function(api, options){
+				api.simulateClick();
+				api.openPopup('facebook');
+			}
+		});
+		jQuery('#googleplus').sharrre({
+			share: {
+				googlePlus: true
+			},
+			template: '<a class="box group" href="#"><div class="count" href="#">{total}</div><div class="share"><i class="fa fa-google-plus-square"></i></div></a>',
+			enableHover: false,
+			enableTracking: true,
+			urlCurl: 'https://www.slothparadise.com/wp-content/themes/anew/js/sharrre.php',
+			click: function(api, options){
+				api.simulateClick();
+				api.openPopup('googlePlus');
+			}
+		});
+		jQuery('#pinterest').sharrre({
+			share: {
+				pinterest: true
+			},
+			template: '<a class="box group" href="#" rel="nofollow"><div class="count" href="#">{total}</div><div class="share"><i class="fa fa-pinterest"></i></div></a>',
+			enableHover: false,
+			enableTracking: true,
+			buttons: {
+			pinterest: {
+				description: '8 Steps to Install Cygwin on Windows',media: 'https://www.slothparadise.com/wp-content/uploads/2014/11/cygwin1.png'				}
+			},
+			click: function(api, options){
+				api.simulateClick();
+				api.openPopup('pinterest');
+			}
+		});
+	});
+</script>
+				
+			</div><!--/.post-inner-->
+			
+		</article><!--/.post-->			
+			
+			<div class="author-bio">
+			<div class="bio-avatar"><img alt='' src='https://secure.gravatar.com/avatar/1e567cd775c3f3d0ee278d3d4ee473a2?s=128&#038;d=mm&#038;r=pg' srcset='https://secure.gravatar.com/avatar/1e567cd775c3f3d0ee278d3d4ee473a2?s=256&#038;d=mm&#038;r=pg 2x' class='avatar avatar-128 photo' height='128' width='128' /></div>
+			<p class="bio-name"><a href="https://www.slothparadise.com/author/huyle333/" title="Posts by Huy Le" rel="author">Huy Le</a></p>
+			<p class="bio-desc"><p>I&#8217;m a software developer. I&#8217;m passionate about teaching people what I know and contributing a speck to the world&#8217;s community of knowledge.</p>
+</p>
+			<div class="clear"></div>
+		</div>
+		
+		<ul class="post-nav group">
+		<li class="next"><a href="https://www.slothparadise.com/how-to-install-django-on-mac/" rel="next"><i class="fa fa-chevron-right"></i><strong>Next</strong> <span>How to Install Django on Mac</span></a></li>
+		<li class="previous"><a href="https://www.slothparadise.com/how-to-create-a-website-with-amazon-web-services-ec2-instance-ubuntu/" rel="prev"><i class="fa fa-chevron-left"></i><strong>Previous</strong> <span>14 Steps to Create a Website with Amazon Web Services EC2 instance &#8211; Ubuntu</span></a></li>
+	</ul>
+	
+	
+<div id="disqus_thread">
+            <div id="dsq-content">
+
+
+            <ul id="dsq-comments">
+                    <li class="post pingback">
+        <p>Pingback: <a href='http://www.slothparadise.com/how-to-create-bootable-usb-flash-drive-of-centos-7-minimal-iso/' rel='external nofollow' class='url'>How to Create Bootable USB Flash Drive of CentOS 7 Minimal ISO - slothparadise</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='http://www.slothparadise.com/how-to-ssh-to-another-computer-with-ethernet-cable-local-area-network/' rel='external nofollow' class='url'>How to SSH to Another Computer with Ethernet Cable - Local Area Network - slothparadise</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='http://www.google.com/ghbuisv' rel='external nofollow' class='url'>Google</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='http://www.google.com/ghsabysr' rel='external nofollow' class='url'>Google</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='https://www.youtube.com/watch?v=u5AuCZiHnhk' rel='external nofollow' class='url'>anal plug</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='https://www.youtube.com/watch?v=quB1qou07Wo' rel='external nofollow' class='url'>american whopper</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='http://www.univ-ouargla.dz' rel='external nofollow' class='url'>universit&#233; Kasdi Merbah</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='http://www.blackbeltshop.us' rel='external nofollow' class='url'>Foam dipped martial arts karate sparring gear</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='https://www.youtube.com/watch?v=aKAYen_hG7Y' rel='external nofollow' class='url'>clitoral massager</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='https://www.youtube.com/watch?v=S45BSQilZ4g' rel='external nofollow' class='url'>sarah rae vlogas</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='https://www.youtube.com/watch?v=0P6fxDNXqMk' rel='external nofollow' class='url'>Adam \u0026 Eve</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='https://www.youtube.com/watch?v=hQCegRjr_Ek' rel='external nofollow' class='url'>dr. kat</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='https://www.youtube.com/watch?v=ldvNQvySLzo' rel='external nofollow' class='url'>bendable vibrator</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='https://www.youtube.com/watch?v=wzBV5FawPm4' rel='external nofollow' class='url'>Masturbation Toy</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='https://www.youtube.com/watch?v=e4UHQ7hpetU' rel='external nofollow' class='url'>strap on anal sex</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='http://www.hairlossspecialist.com.sg/' rel='external nofollow' class='url'>hair loss clinic Singapore</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='http://www.houzz.com/ideabooks/73728609/thumbs/vanity-mirror-with-lights' rel='external nofollow' class='url'>double wide bathroom mirror</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='http://www.shventtech.com/product_copper-tube-copper-fin-heat-exchanger_23447.html' rel='external nofollow' class='url'>rooftop air conditioning unit</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='https://www.youtube.com/watch?v=uXkNxkg9XHs' rel='external nofollow' class='url'>pussy masturbator</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='https://www.youtube.com/watch?v=_LRu6HhZO2c' rel='external nofollow' class='url'>body wand personal massager</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='https://www.youtube.com/watch?v=wFV9ODunNQU' rel='external nofollow' class='url'>ed pumps for sale</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='https://www.youtube.com/watch?v=mkarcAblx-w' rel='external nofollow' class='url'>bj</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='https://www.youtube.com/watch?v=0dEmm8wQZrw' rel='external nofollow' class='url'>adam and eve sex toys</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='http://www.pouyabin.com' rel='external nofollow' class='url'>&#1606;&#1589;&#1576; &#1583;&#1608;&#1585;&#1576;&#1740;&#1606; &#1605;&#1583;&#1575;&#1585;&#1576;&#1587;&#1578;&#1607;</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='http://blue1122.webstoreplace.com/' rel='external nofollow' class='url'>ABS Module Intercooler</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='https://www.youtube.com/watch?v=NXFHo89ytsM' rel='external nofollow' class='url'>sex toys</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='https://www.youtube.com/watch?v=fXabFsLhlzE' rel='external nofollow' class='url'>mini bullet vibrator</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='https://www.youtube.com/watch?v=A0QV9EqTxNM' rel='external nofollow' class='url'>magic touch vibrator</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='https://www.youtube.com/watch?v=u4EAnrJ7C8U' rel='external nofollow' class='url'>analvibrator</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='https://www.youtube.com/watch?v=EyvqBPiM9-c' rel='external nofollow' class='url'>vibrators for sale</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='https://www.youtube.com/watch?v=NPXOeQalCJQ' rel='external nofollow' class='url'>butterfly vibrator</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='https://play.google.com/store/apps/details?id=com.zigmos.my.android585605a48bce0&#038;hl=fr' rel='external nofollow' class='url'>jbeatz</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='https://www.youtube.com/watch?v=-M8vWouQIus' rel='external nofollow' class='url'>Oral Sex Toys</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='https://www.youtube.com/watch?v=6lopCj2Nt4k' rel='external nofollow' class='url'>Rabbit Vibrator</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='https://www.youtube.com/watch?v=1h32ilKHvSQ' rel='external nofollow' class='url'>Best Penis Pump</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='https://www.youtube.com/watch?v=2IK9U5mRCmQ' rel='external nofollow' class='url'>Penis Ring</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='https://www.youtube.com/watch?v=CsZdtWDBVuI' rel='external nofollow' class='url'>Top Gauge Professional Pump</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='http://www.86el.com/product/product.php?lang=en&#038;class3=120' rel='external nofollow' class='url'>Cambodia ladies strip t shirts Factory</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='https://www.youtube.com/watch?v=kDCSuLzvQ04' rel='external nofollow' class='url'>Sex Toys for Couples</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='https://www.youtube.com/watch?v=iCoRh4RKLwQ' rel='external nofollow' class='url'>climax</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='https://www.youtube.com/watch?v=AsFyA1yvPVM' rel='external nofollow' class='url'>Erotic Toys for men</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='https://www.youtube.com/watch?v=rSbWLz7386g' rel='external nofollow' class='url'>realstic vibrator</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='https://www.youtube.com/watch?v=umjy6WZ3TA4' rel='external nofollow' class='url'>the best cock ring</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='https://www.youtube.com/watch?v=cVm1tSgXo00' rel='external nofollow' class='url'>anal trainer kit</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='http://www.apppcdownload.com/wombats-adventure-pro/' rel='external nofollow' class='url'>free download for pc windows</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='http://www.laptoppcapk.com/weather-meteo-world/' rel='external nofollow' class='url'>free download for windows</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='http://www.pcwindowsdownload.com/android-games/wordwhizzle.html' rel='external nofollow' class='url'>apps for pc download</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='http://penningtonpest.com' rel='external nofollow' class='url'>Rodent</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='http://www.freepcapp.com/reg-exp-tester/' rel='external nofollow' class='url'>app download for pc</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='https://www.youtube.com/watch?v=847H_qhSbO4' rel='external nofollow' class='url'>wand vibrators</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='https://www.youtube.com/watch?v=AMngz23rRjw' rel='external nofollow' class='url'>adam and eve sex toys</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='https://www.youtube.com/watch?v=6kv67TigRI4' rel='external nofollow' class='url'>womens luxe vibe</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='https://www.youtube.com/watch?v=YagwF0qztCI' rel='external nofollow' class='url'>adamandeve.com</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='https://www.youtube.com/watch?v=zIDnXWLJQ60' rel='external nofollow' class='url'>male masturbators</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='https://www.youtube.com/watch?v=80i0MdWVrR8' rel='external nofollow' class='url'>Female G Spot</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='https://www.youtube.com/watch?v=b_nE3-3vGbw' rel='external nofollow' class='url'>vibrating dildo review</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+            </ul>
+
+
+        </div>
+
+    </div>
+
+	
+	</div><!--/.pad-->
+	
+</section><!--/.content-->
+
+
+	<div class="sidebar s1">
+		
+		<a class="sidebar-toggle" title="Expand Sidebar"><i class="fa icon-sidebar-toggle"></i></a>
+		
+		<div class="sidebar-content">
+				
+						
+					<div id="recent-posts-4" class="widget widget_recent_entries">		<h3>Recent Posts</h3>		<ul>
+											<li>
+					<a href="https://www.slothparadise.com/world-one-microsoft-hololens-rpg-developer-diary-2017/">World One Microsoft HoloLens RPG &#8211; Developer Diary 2017</a>
+											<span class="post-date">December 31, 2017</span>
+									</li>
+											<li>
+					<a href="https://www.slothparadise.com/duel-monsters-go-card-scanning-preview/">Duel Monsters GO &#8211; Card Scanning Preview</a>
+											<span class="post-date">November 18, 2017</span>
+									</li>
+											<li>
+					<a href="https://www.slothparadise.com/duel-monsters-go-sf-game-expo-magwest-crunchyroll-expo-2017/">Duel Monsters GO &#8211; SF Game Expo, MAGWest, and Crunchyroll Expo 2017</a>
+											<span class="post-date">September 12, 2017</span>
+									</li>
+											<li>
+					<a href="https://www.slothparadise.com/introducing-duel-monsters-go-yugioh-ar-fan-game-hololens/">Introducing Duel Monsters GO &#8211; Yugioh AR fan game for HoloLens</a>
+											<span class="post-date">August 15, 2017</span>
+									</li>
+											<li>
+					<a href="https://www.slothparadise.com/making-yu-gi-oh-real-life-demo-hololens/">The making of Yu-Gi-Oh! in Real Life Demo for HoloLens</a>
+											<span class="post-date">August 1, 2017</span>
+									</li>
+					</ul>
+		</div><div id="archives-7" class="widget widget_archive"><h3>Archives</h3>		<label class="screen-reader-text" for="archives-dropdown-7">Archives</label>
+		<select id="archives-dropdown-7" name="archive-dropdown" onchange='document.location.href=this.options[this.selectedIndex].value;'>
+			
+			<option value="">Select Month</option>
+				<option value='https://www.slothparadise.com/2017/12/'> December 2017 &nbsp;(1)</option>
+	<option value='https://www.slothparadise.com/2017/11/'> November 2017 &nbsp;(1)</option>
+	<option value='https://www.slothparadise.com/2017/09/'> September 2017 &nbsp;(1)</option>
+	<option value='https://www.slothparadise.com/2017/08/'> August 2017 &nbsp;(2)</option>
+	<option value='https://www.slothparadise.com/2017/06/'> June 2017 &nbsp;(1)</option>
+	<option value='https://www.slothparadise.com/2017/04/'> April 2017 &nbsp;(2)</option>
+	<option value='https://www.slothparadise.com/2017/02/'> February 2017 &nbsp;(9)</option>
+	<option value='https://www.slothparadise.com/2016/12/'> December 2016 &nbsp;(5)</option>
+	<option value='https://www.slothparadise.com/2016/11/'> November 2016 &nbsp;(1)</option>
+	<option value='https://www.slothparadise.com/2016/10/'> October 2016 &nbsp;(1)</option>
+	<option value='https://www.slothparadise.com/2016/09/'> September 2016 &nbsp;(3)</option>
+	<option value='https://www.slothparadise.com/2016/08/'> August 2016 &nbsp;(2)</option>
+	<option value='https://www.slothparadise.com/2016/07/'> July 2016 &nbsp;(10)</option>
+	<option value='https://www.slothparadise.com/2016/06/'> June 2016 &nbsp;(2)</option>
+	<option value='https://www.slothparadise.com/2016/05/'> May 2016 &nbsp;(2)</option>
+	<option value='https://www.slothparadise.com/2016/04/'> April 2016 &nbsp;(9)</option>
+	<option value='https://www.slothparadise.com/2016/03/'> March 2016 &nbsp;(8)</option>
+	<option value='https://www.slothparadise.com/2016/02/'> February 2016 &nbsp;(1)</option>
+	<option value='https://www.slothparadise.com/2016/01/'> January 2016 &nbsp;(1)</option>
+	<option value='https://www.slothparadise.com/2015/12/'> December 2015 &nbsp;(6)</option>
+	<option value='https://www.slothparadise.com/2015/11/'> November 2015 &nbsp;(1)</option>
+	<option value='https://www.slothparadise.com/2015/10/'> October 2015 &nbsp;(2)</option>
+	<option value='https://www.slothparadise.com/2015/09/'> September 2015 &nbsp;(3)</option>
+	<option value='https://www.slothparadise.com/2015/08/'> August 2015 &nbsp;(5)</option>
+	<option value='https://www.slothparadise.com/2015/07/'> July 2015 &nbsp;(10)</option>
+	<option value='https://www.slothparadise.com/2015/06/'> June 2015 &nbsp;(5)</option>
+	<option value='https://www.slothparadise.com/2015/05/'> May 2015 &nbsp;(4)</option>
+	<option value='https://www.slothparadise.com/2015/01/'> January 2015 &nbsp;(1)</option>
+	<option value='https://www.slothparadise.com/2014/11/'> November 2014 &nbsp;(3)</option>
+	<option value='https://www.slothparadise.com/2014/07/'> July 2014 &nbsp;(1)</option>
+
+		</select>
+		</div><div id="alxposts-3" class="widget widget_alx_posts">
+<h3>What Others Are Reading</h3>
+			
+	<ul class="alx-posts group thumbs-enabled">
+				<li>
+			
+						<div class="post-item-thumbnail">
+				<a href="https://www.slothparadise.com/hololens-development-edition-worth-buying/" title="Is the HoloLens Development Edition Worth Buying?">
+											<img width="520" height="245" src="https://www.slothparadise.com/wp-content/uploads/2016/12/hololens-dev-edition-520x245.jpg" class="attachment-thumb-medium size-thumb-medium wp-post-image" alt="" srcset="https://www.slothparadise.com/wp-content/uploads/2016/12/hololens-dev-edition-520x245.jpg 520w, https://www.slothparadise.com/wp-content/uploads/2016/12/hololens-dev-edition-700x329.jpg 700w" sizes="(max-width: 520px) 100vw, 520px" />																								</a>
+			</div>
+						
+			<div class="post-item-inner group">
+				<p class="post-item-category"><a href="https://www.slothparadise.com/category/hololens/" rel="category tag">HoloLens</a></p>				<p class="post-item-title"><a href="https://www.slothparadise.com/hololens-development-edition-worth-buying/" rel="bookmark" title="Is the HoloLens Development Edition Worth Buying?">Is the HoloLens Development Edition Worth Buying?</a></p>
+				<p class="post-item-date">11 Dec, 2016</p>			</div>
+			
+		</li>
+				<li>
+			
+						<div class="post-item-thumbnail">
+				<a href="https://www.slothparadise.com/how-to-setup-shortcuts-for-ssh/" title="How to Setup Shortcuts for SSH">
+											<img width="520" height="245" src="https://www.slothparadise.com/wp-content/uploads/2015/12/ssh-shortcut-520x245.png" class="attachment-thumb-medium size-thumb-medium wp-post-image" alt="" srcset="https://www.slothparadise.com/wp-content/uploads/2015/12/ssh-shortcut-520x245.png 520w, https://www.slothparadise.com/wp-content/uploads/2015/12/ssh-shortcut-700x329.png 700w" sizes="(max-width: 520px) 100vw, 520px" />																								</a>
+			</div>
+						
+			<div class="post-item-inner group">
+				<p class="post-item-category"><a href="https://www.slothparadise.com/category/documentation/" rel="category tag">Documentation</a></p>				<p class="post-item-title"><a href="https://www.slothparadise.com/how-to-setup-shortcuts-for-ssh/" rel="bookmark" title="How to Setup Shortcuts for SSH">How to Setup Shortcuts for SSH</a></p>
+				<p class="post-item-date">3 Dec, 2015</p>			</div>
+			
+		</li>
+				<li>
+			
+						<div class="post-item-thumbnail">
+				<a href="https://www.slothparadise.com/git-get-file-another-commit-branch/" title="Git: get a file from another commit or branch">
+											<img width="520" height="245" src="https://www.slothparadise.com/wp-content/uploads/2015/05/github-octocat-520x245.png" class="attachment-thumb-medium size-thumb-medium wp-post-image" alt="" srcset="https://www.slothparadise.com/wp-content/uploads/2015/05/github-octocat-520x245.png 520w, https://www.slothparadise.com/wp-content/uploads/2015/05/github-octocat-700x329.png 700w" sizes="(max-width: 520px) 100vw, 520px" />																								</a>
+			</div>
+						
+			<div class="post-item-inner group">
+				<p class="post-item-category"><a href="https://www.slothparadise.com/category/github/" rel="category tag">Github</a></p>				<p class="post-item-title"><a href="https://www.slothparadise.com/git-get-file-another-commit-branch/" rel="bookmark" title="Git: get a file from another commit or branch">Git: get a file from another commit or branch</a></p>
+				<p class="post-item-date">23 Jul, 2015</p>			</div>
+			
+		</li>
+				<li>
+			
+						<div class="post-item-thumbnail">
+				<a href="https://www.slothparadise.com/string-vs-stringbuffer-vs-stringbuilder-in-java/" title="String vs StringBuffer vs StringBuilder in Java">
+											<img width="520" height="245" src="https://www.slothparadise.com/wp-content/uploads/2015/09/StringBuffer-vs-StringBuilder-520x245.png" class="attachment-thumb-medium size-thumb-medium wp-post-image" alt="" srcset="https://www.slothparadise.com/wp-content/uploads/2015/09/StringBuffer-vs-StringBuilder-520x245.png 520w, https://www.slothparadise.com/wp-content/uploads/2015/09/StringBuffer-vs-StringBuilder-700x329.png 700w" sizes="(max-width: 520px) 100vw, 520px" />																								</a>
+			</div>
+						
+			<div class="post-item-inner group">
+				<p class="post-item-category"><a href="https://www.slothparadise.com/category/java/" rel="category tag">Java</a></p>				<p class="post-item-title"><a href="https://www.slothparadise.com/string-vs-stringbuffer-vs-stringbuilder-in-java/" rel="bookmark" title="String vs StringBuffer vs StringBuilder in Java">String vs StringBuffer vs StringBuilder in Java</a></p>
+				<p class="post-item-date">7 Sep, 2015</p>			</div>
+			
+		</li>
+				<li>
+			
+						<div class="post-item-thumbnail">
+				<a href="https://www.slothparadise.com/running-mpi-common-mpi-troubleshooting-problems/" title="Running MPI &#8211; Common MPI Troubleshooting Problems">
+											<img width="520" height="245" src="https://www.slothparadise.com/wp-content/uploads/2016/03/mpi-llnl-logo-520x245.gif" class="attachment-thumb-medium size-thumb-medium wp-post-image" alt="" srcset="https://www.slothparadise.com/wp-content/uploads/2016/03/mpi-llnl-logo-520x245.gif 520w, https://www.slothparadise.com/wp-content/uploads/2016/03/mpi-llnl-logo-700x329.gif 700w" sizes="(max-width: 520px) 100vw, 520px" />																								</a>
+			</div>
+						
+			<div class="post-item-inner group">
+				<p class="post-item-category"><a href="https://www.slothparadise.com/category/documentation/" rel="category tag">Documentation</a> / <a href="https://www.slothparadise.com/category/mpi/" rel="category tag">MPI</a></p>				<p class="post-item-title"><a href="https://www.slothparadise.com/running-mpi-common-mpi-troubleshooting-problems/" rel="bookmark" title="Running MPI &#8211; Common MPI Troubleshooting Problems">Running MPI &#8211; Common MPI Troubleshooting Problems</a></p>
+				<p class="post-item-date">11 Mar, 2016</p>			</div>
+			
+		</li>
+				<li>
+			
+						<div class="post-item-thumbnail">
+				<a href="https://www.slothparadise.com/install-centos-6-minimum-without-internet/" title="How to Install CentOS 6 Minimum Without Internet">
+											<img width="520" height="245" src="https://www.slothparadise.com/wp-content/uploads/2016/05/centos-thumbnail-520x245.png" class="attachment-thumb-medium size-thumb-medium wp-post-image" alt="" srcset="https://www.slothparadise.com/wp-content/uploads/2016/05/centos-thumbnail-520x245.png 520w, https://www.slothparadise.com/wp-content/uploads/2016/05/centos-thumbnail-700x329.png 700w" sizes="(max-width: 520px) 100vw, 520px" />																								</a>
+			</div>
+						
+			<div class="post-item-inner group">
+				<p class="post-item-category"><a href="https://www.slothparadise.com/category/centos-6/" rel="category tag">CentOS 6</a> / <a href="https://www.slothparadise.com/category/documentation/" rel="category tag">Documentation</a></p>				<p class="post-item-title"><a href="https://www.slothparadise.com/install-centos-6-minimum-without-internet/" rel="bookmark" title="How to Install CentOS 6 Minimum Without Internet">How to Install CentOS 6 Minimum Without Internet</a></p>
+				<p class="post-item-date">14 Apr, 2016</p>			</div>
+			
+		</li>
+			</ul><!--/.alx-posts-->
+
+</div>
+
+<!-- Quick Adsense Reloaded -->
+<div id="adswidget1-quick-adsense-reloaded-3" class="widget quads-ad1_widget"><div id="quads-ad1_widget" style="float:none;margin:0px 0 0px 0;text-align:center;"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- SlothparadiseSideBar01 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7477930862359747"
+     data-ad-slot="8971981401"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div></div>			
+		</div><!--/.sidebar-content-->
+		
+	</div><!--/.sidebar-->
+	
+
+		</div><!--/.main-->
+	</div><!--/.container-inner-->
+	
+	<footer id="footer">	
+				
+		<section id="footer-widgets" class="container">
+			<div class="pad group">
+											
+				<div class="footer-widget-1 grid one-third ">
+					<div id="alxtabs-3" class="widget widget_alx_tabs">
+<h3>Popular</h3><ul class="alx-tabs-nav group tab-count-3"><li class="alx-tab tab-popular"><a href="#tab-popular" title="Popular Posts"><i class="fa fa-star"></i><span>Popular Posts</span></a></li><li class="alx-tab tab-recent"><a href="#tab-recent" title="Recent Posts"><i class="fa fa-clock-o"></i><span>Recent Posts</span></a></li><li class="alx-tab tab-comments"><a href="#tab-comments" title="Recent Comments"><i class="fa fa-comments-o"></i><span>Recent Comments</span></a></li></ul>
+	<div class="alx-tabs-container">
+
+	
+					
+									
+			<ul id="tab-recent" class="alx-tab group thumbs-enabled">
+								<li>
+					
+										<div class="tab-item-thumbnail">
+						<a href="https://www.slothparadise.com/world-one-microsoft-hololens-rpg-developer-diary-2017/" title="World One Microsoft HoloLens RPG &#8211; Developer Diary 2017">
+															<img width="160" height="160" src="https://www.slothparadise.com/wp-content/uploads/2017/12/worldone-image3-160x160.png" class="attachment-thumb-small size-thumb-small wp-post-image" alt="" srcset="https://www.slothparadise.com/wp-content/uploads/2017/12/worldone-image3-160x160.png 160w, https://www.slothparadise.com/wp-content/uploads/2017/12/worldone-image3-150x150.png 150w" sizes="(max-width: 160px) 100vw, 160px" />																																		</a>
+					</div>
+										
+					<div class="tab-item-inner group">
+						<p class="tab-item-category"><a href="https://www.slothparadise.com/category/hololens/" rel="category tag">HoloLens</a></p>						<p class="tab-item-title"><a href="https://www.slothparadise.com/world-one-microsoft-hololens-rpg-developer-diary-2017/" rel="bookmark" title="World One Microsoft HoloLens RPG &#8211; Developer Diary 2017">World One Microsoft HoloLens RPG &#8211; Developer Diary 2017</a></p>
+						<p class="tab-item-date">31 Dec, 2017</p>					</div>
+					
+				</li>
+								<li>
+					
+										<div class="tab-item-thumbnail">
+						<a href="https://www.slothparadise.com/duel-monsters-go-card-scanning-preview/" title="Duel Monsters GO &#8211; Card Scanning Preview">
+															<img width="160" height="160" src="https://www.slothparadise.com/wp-content/uploads/2017/11/ygo-ar-card-scanning-youtube-thumbnail-160x160.jpg" class="attachment-thumb-small size-thumb-small wp-post-image" alt="" srcset="https://www.slothparadise.com/wp-content/uploads/2017/11/ygo-ar-card-scanning-youtube-thumbnail-160x160.jpg 160w, https://www.slothparadise.com/wp-content/uploads/2017/11/ygo-ar-card-scanning-youtube-thumbnail-150x150.jpg 150w" sizes="(max-width: 160px) 100vw, 160px" />																																		</a>
+					</div>
+										
+					<div class="tab-item-inner group">
+						<p class="tab-item-category"><a href="https://www.slothparadise.com/category/hololens/" rel="category tag">HoloLens</a> / <a href="https://www.slothparadise.com/category/news/" rel="category tag">News</a> / <a href="https://www.slothparadise.com/category/yugioh/" rel="category tag">Yugioh</a></p>						<p class="tab-item-title"><a href="https://www.slothparadise.com/duel-monsters-go-card-scanning-preview/" rel="bookmark" title="Duel Monsters GO &#8211; Card Scanning Preview">Duel Monsters GO &#8211; Card Scanning Preview</a></p>
+						<p class="tab-item-date">18 Nov, 2017</p>					</div>
+					
+				</li>
+							</ul><!--/.alx-tab-->
+
+		
+
+						
+						<ul id="tab-popular" class="alx-tab group thumbs-enabled">
+				
+								<li>
+				
+										<div class="tab-item-thumbnail">
+						<a href="https://www.slothparadise.com/introduction-python-computer-science-chapter-7-lists/" title="Introduction to Python and Computer Science &#8211; Chapter 7 &#8211; Lists">
+															<img width="160" height="160" src="https://www.slothparadise.com/wp-content/uploads/2017/02/python-wallpaper-160x160.png" class="attachment-thumb-small size-thumb-small wp-post-image" alt="" srcset="https://www.slothparadise.com/wp-content/uploads/2017/02/python-wallpaper-160x160.png 160w, https://www.slothparadise.com/wp-content/uploads/2017/02/python-wallpaper-150x150.png 150w" sizes="(max-width: 160px) 100vw, 160px" />																																		</a>
+					</div>
+										
+					<div class="tab-item-inner group">
+						<p class="tab-item-category"><a href="https://www.slothparadise.com/category/python/" rel="category tag">Python</a></p>						<p class="tab-item-title"><a href="https://www.slothparadise.com/introduction-python-computer-science-chapter-7-lists/" rel="bookmark" title="Introduction to Python and Computer Science &#8211; Chapter 7 &#8211; Lists">Introduction to Python and Computer Science &#8211; Chapter 7 &#8211; Lists</a></p>
+						<p class="tab-item-date">15 Feb, 2017</p>					</div>
+					
+				</li>
+								<li>
+				
+										<div class="tab-item-thumbnail">
+						<a href="https://www.slothparadise.com/introduction-python-computer-science-chapter-6-strings-loops/" title="Introduction to Python and Computer Science &#8211; Chapter 6 &#8211; Strings and For Loops">
+															<img width="160" height="160" src="https://www.slothparadise.com/wp-content/uploads/2017/02/python-wallpaper-160x160.png" class="attachment-thumb-small size-thumb-small wp-post-image" alt="" srcset="https://www.slothparadise.com/wp-content/uploads/2017/02/python-wallpaper-160x160.png 160w, https://www.slothparadise.com/wp-content/uploads/2017/02/python-wallpaper-150x150.png 150w" sizes="(max-width: 160px) 100vw, 160px" />																																		</a>
+					</div>
+										
+					<div class="tab-item-inner group">
+						<p class="tab-item-category"><a href="https://www.slothparadise.com/category/python/" rel="category tag">Python</a></p>						<p class="tab-item-title"><a href="https://www.slothparadise.com/introduction-python-computer-science-chapter-6-strings-loops/" rel="bookmark" title="Introduction to Python and Computer Science &#8211; Chapter 6 &#8211; Strings and For Loops">Introduction to Python and Computer Science &#8211; Chapter 6 &#8211; Strings and For Loops</a></p>
+						<p class="tab-item-date">10 Feb, 2017</p>					</div>
+					
+				</li>
+							</ul><!--/.alx-tab-->
+			
+			
+
+		
+						
+			<ul id="tab-comments" class="alx-tab group ">
+								<li>
+					
+												
+						<div class="tab-item-inner group">
+												
+							<div class="tab-item-name">Superkompjuter u VirtualBox-u (TORQUE) &#8211; deo II &#8211; Blog Instituta za matematiku i informatiku PMF-a says:</div>
+							<div class="tab-item-comment"><a href="https://www.slothparadise.com/how-to-setup-mpi-on-centos-7-2-connected-virtual-machines-part-2/#comment-23493">[&#8230;] https://www.slothparadise.com/how-to-setup-mpi-on-centos-7-2-connected-virtual-machines-part-2/ [&#8230;]</a></div>
+							
+						</div>
+
+				</li>
+								<li>
+					
+												
+						<div class="tab-item-inner group">
+												
+							<div class="tab-item-name">top liwe says:</div>
+							<div class="tab-item-comment"><a href="https://www.slothparadise.com/mount-usb-flash-drive-centos-7/#comment-22281">top liwe  top liwe</a></div>
+							
+						</div>
+
+				</li>
+								<li>
+					
+												
+						<div class="tab-item-inner group">
+												
+							<div class="tab-item-name">Parallel Computing with Custom Beowulf Cluster &#8211; Jon Deaton&#039;s Blog says:</div>
+							<div class="tab-item-comment"><a href="https://www.slothparadise.com/fix-orte-error-unknown-option-hnp-topo-sig/#comment-21849">[&#8230;] lack of more specific error messages had me searching for...</a></div>
+							
+						</div>
+
+				</li>
+							</ul><!--/.alx-tab-->
+
+		
+			</div>
+
+</div>
+				</div>
+		
+																
+				<div class="footer-widget-2 grid one-third ">
+					<div id="wp_subscribe-5" class="widget wp_subscribe">            
+            <div class="wp-subscribe no-name-field" id="wp-subscribe">
+                <h4 class="title"></h4>
+                <p class="text">Subscribe to our newsletter for all the latest news on slothparadise!</p>
+
+                                
+                                        <form action="/how-to-install-cygwin-on-windows/?mailchimp_signup=1" method="post">
+                                                <input class="email-field" type="text" value="" placeholder="Enter your email here" name="mailchimp_email">
+                        <input class="submit" name="submit" type="submit" value="Sign Up Today">
+                        <input type="hidden" name="widget_id" value="wp_subscribe-5" />
+                    </form>
+                                    <div class="clear"></div>
+                
+                <p class="footer-text">You can opt out at anytime.</p>
+                
+            </div><!--subscribe_widget-->
+        
+        </div>				</div>
+		
+																
+				<div class="footer-widget-3 grid one-third last">
+					<div id="alxposts-6" class="widget widget_alx_posts">
+<h3>Featured</h3>
+			
+	<ul class="alx-posts group thumbs-enabled">
+				<li>
+			
+						<div class="post-item-thumbnail">
+				<a href="https://www.slothparadise.com/compile-hpl-linpack/" title="How to compile HPL (LINPACK)">
+											<img width="520" height="245" src="https://www.slothparadise.com/wp-content/uploads/2016/07/HPL_data_distr_small-520x245.png" class="attachment-thumb-medium size-thumb-medium wp-post-image" alt="" srcset="https://www.slothparadise.com/wp-content/uploads/2016/07/HPL_data_distr_small-520x245.png 520w, https://www.slothparadise.com/wp-content/uploads/2016/07/HPL_data_distr_small-700x329.png 700w" sizes="(max-width: 520px) 100vw, 520px" />																								</a>
+			</div>
+						
+			<div class="post-item-inner group">
+				<p class="post-item-category"><a href="https://www.slothparadise.com/category/cuda/" rel="category tag">CUDA</a> / <a href="https://www.slothparadise.com/category/documentation/" rel="category tag">Documentation</a> / <a href="https://www.slothparadise.com/category/intel/" rel="category tag">Intel</a> / <a href="https://www.slothparadise.com/category/mpi/" rel="category tag">MPI</a></p>				<p class="post-item-title"><a href="https://www.slothparadise.com/compile-hpl-linpack/" rel="bookmark" title="How to compile HPL (LINPACK)">How to compile HPL (LINPACK)</a></p>
+				<p class="post-item-date">7 Jul, 2016</p>			</div>
+			
+		</li>
+			</ul><!--/.alx-posts-->
+
+</div>
+				</div>
+		
+												</div><!--/.pad-->
+		</section><!--/#footer-widgets-->	
+				
+					<nav class="nav-container group" id="nav-footer">
+				<div class="nav-toggle"><i class="fa fa-bars"></i></div>
+				<div class="nav-text"><!-- put your mobile menu text here --></div>
+				<div class="nav-wrap"><ul id="menu-footer-menu" class="nav container group"><li id="menu-item-1944" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1944"><a href="http://www.slothparadise.com">Home</a></li>
+<li id="menu-item-2057" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-2057"><a href="https://www.slothparadise.com/blog/">Blog</a></li>
+<li id="menu-item-2124" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2124"><a href="https://www.slothparadise.com/about/">About</a></li>
+<li id="menu-item-1954" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1954"><a title="Contact" href="https://www.slothparadise.com/contact-us/">Contact Us</a></li>
+<li id="menu-item-1946" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1946"><a href="https://www.slothparadise.com/privacy-policy/">Privacy Policy</a></li>
+</ul></div>
+			</nav><!--/#nav-footer-->
+				
+		<section id="footer-bottom">
+			<div class="container">
+			
+				<a id="back-to-top" href="#"><i class="fa fa-angle-up"></i></a>
+				
+				<div class="pad group">				
+					<div class="grid one-half">
+					
+													<img id="footer-logo" src="https://www.slothparadise.com/wp-content/uploads/2014/07/slothlogo.png" alt="">
+												
+						<div id="copyright">
+															<p>slothparadise © 2014 - 2018. All Rights Reserved.</p>
+													</div><!--/#copyright-->
+						
+												
+					</div>		
+					<div class="grid one-half last">	
+						<ul class="social-links"><li><a rel="nofollow" class="social-tooltip" title="Patreon" href="https://www.patreon.com/microwavesam" target="Array"><i class="fa fa-heart" style="color: #ffffff;"></i></a></li></ul>					</div>		
+				</div><!--/.pad-->
+				
+			</div><!--/.container-->
+		</section><!--/#footer-bottom-->
+		
+	</footer><!--/#footer-->
+
+</div><!--/#wrapper-->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46691413-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<link rel='stylesheet' id='wp-subscribe-css'  href='https://www.slothparadise.com/wp-content/plugins/wp-subscribe/css/wp-subscribe.css?ver=4.9.1' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/www.slothparadise.com\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}},"cached":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.slothparadise.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.9'></script>
+<script type='text/javascript' src='https://www.slothparadise.com/wp-content/plugins/light/js/jquery.fancybox.pack.js?ver=4.9.1'></script>
+<script type='text/javascript' src='https://www.slothparadise.com/wp-content/plugins/light/js/light.js?ver=4.9.1'></script>
+<script type='text/javascript' src='https://www.slothparadise.com/wp-content/plugins/ad-invalid-click-protector/assets/js/js.cookie.min.js?ver=2.1.3'></script>
+<script type='text/javascript' src='https://www.slothparadise.com/wp-content/plugins/ad-invalid-click-protector/assets/js/jquery.iframetracker.min.js?ver=1.1.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var AICP = {"ajaxurl":"https:\/\/www.slothparadise.com\/wp-admin\/admin-ajax.php","nonce":"60f2718e90","ip":"109.230.100.169","clickLimit":"3","clickCounterCookieExp":"3","banDuration":"7","countryBlockCheck":"No","banCountryList":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.slothparadise.com/wp-content/plugins/ad-invalid-click-protector/assets/js/aicp.min.js?ver=1.0'></script>
+<script type='text/javascript' src='https://www.slothparadise.com/wp-content/themes/anew/js/jquery.jplayer.min.js?ver=4.9.1'></script>
+<script type='text/javascript' src='https://www.slothparadise.com/wp-content/themes/anew/js/scripts.js?ver=4.9.1'></script>
+<script type='text/javascript' src='https://www.slothparadise.com/wp-content/themes/anew/js/jquery.sharrre.min.js?ver=4.9.1'></script>
+<script type='text/javascript' src='https://www.slothparadise.com/wp-includes/js/comment-reply.min.js?ver=4.9.1'></script>
+<script type='text/javascript' src='https://www.slothparadise.com/wp-includes/js/wp-embed.min.js?ver=4.9.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var embedVars = {"disqusConfig":{"platform":"wordpress@4.9.1","language":""},"disqusIdentifier":"63 http:\/\/tangodown.org\/?p=63","disqusShortname":"tangodownorg","disqusTitle":"8 Steps to Install Cygwin on Windows","disqusUrl":"https:\/\/www.slothparadise.com\/how-to-install-cygwin-on-windows\/","options":{"manualSync":false},"postId":"63"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.slothparadise.com/wp-content/plugins/disqus-comment-system/media/js/disqus.js?ver=4.9.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var countVars = {"disqusShortname":"tangodownorg"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.slothparadise.com/wp-content/plugins/disqus-comment-system/media/js/count.js?ver=4.9.1'></script>
+<!--[if lt IE 9]>
+<script src="https://www.slothparadise.com/wp-content/themes/anew/js/ie/respond.js"></script>
+<![endif]-->
+</body>
+</html>
+<!-- Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/products/
+
+ Served from: www.slothparadise.com @ 2018-01-01 02:18:42 by W3 Total Cache -->
